@@ -2,39 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* EcoGift Design System - Earth tones and natural elegance
+All colors MUST be HSL for proper theme switching.
+Inspired by natural aromatics and home decor aesthetics.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors - warm and natural */
+    --background: 34 20% 96%;
+    --foreground: 24 12% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card variants */
+    --card: 34 25% 98%;
+    --card-foreground: 24 12% 15%;
+    
+    /* Popover */
+    --popover: 34 25% 98%;
+    --popover-foreground: 24 12% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Primary - sage green accent */
+    --primary: 136 25% 45%;
+    --primary-foreground: 34 25% 98%;
+    --primary-glow: 136 35% 65%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Secondary - warm beige */
+    --secondary: 34 30% 88%;
+    --secondary-foreground: 24 12% 15%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Muted tones */
+    --muted: 34 20% 92%;
+    --muted-foreground: 24 8% 50%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent - earthy brown */
+    --accent: 24 25% 75%;
+    --accent-foreground: 24 12% 15%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Destructive */
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 34 25% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Borders and inputs */
+    --border: 34 20% 88%;
+    --input: 34 20% 88%;
+    --ring: 136 25% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(136 25% 45%), hsl(136 35% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(34 30% 96%) 0%, hsl(136 15% 92%) 50%, hsl(34 25% 94%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(34 25% 98%) 0%, hsl(34 30% 96%) 100%);
+    
+    /* Elegant shadows */
+    --shadow-soft: 0 4px 20px hsl(24 12% 15% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(24 12% 15% / 0.12);
+    --shadow-glow: 0 0 40px hsl(136 35% 65% / 0.2);
+    
+    /* Glassmorphism */
+    --glass-bg: hsl(34 25% 98% / 0.8);
+    --glass-border: hsl(34 20% 88% / 0.3);
 
     --radius: 0.5rem;
 
@@ -56,33 +81,57 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Base colors - dark earthy theme */
+    --background: 24 15% 12%;
+    --foreground: 34 25% 90%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    /* Card variants */
+    --card: 24 20% 15%;
+    --card-foreground: 34 25% 90%;
+    
+    /* Popover */
+    --popover: 24 20% 15%;
+    --popover-foreground: 34 25% 90%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    /* Primary - bright sage */
+    --primary: 136 35% 65%;
+    --primary-foreground: 24 15% 12%;
+    --primary-glow: 136 45% 75%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - dark warm */
+    --secondary: 24 25% 20%;
+    --secondary-foreground: 34 25% 90%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    /* Muted tones */
+    --muted: 24 20% 18%;
+    --muted-foreground: 34 15% 65%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Accent - warm brown */
+    --accent: 24 30% 30%;
+    --accent-foreground: 34 25% 90%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    /* Destructive */
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 34 25% 90%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    /* Borders and inputs */
+    --border: 24 20% 22%;
+    --input: 24 20% 22%;
+    --ring: 136 35% 65%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    /* Premium gradients - dark */
+    --gradient-primary: linear-gradient(135deg, hsl(136 35% 65%), hsl(136 45% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(24 15% 12%) 0%, hsl(24 20% 15%) 50%, hsl(24 18% 14%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(24 20% 15%) 0%, hsl(24 25% 18%) 100%);
+    
+    /* Elegant shadows - dark */
+    --shadow-soft: 0 4px 20px hsl(24 30% 8% / 0.4);
+    --shadow-medium: 0 8px 30px hsl(24 30% 8% / 0.6);
+    --shadow-glow: 0 0 40px hsl(136 45% 75% / 0.3);
+    
+    /* Glassmorphism - dark */
+    --glass-bg: hsl(24 20% 15% / 0.8);
+    --glass-border: hsl(24 20% 22% / 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +149,79 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    background: var(--gradient-hero);
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero section styles */
+  .hero-glass {
+    @apply backdrop-blur-sm border;
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* Elegant animations */
+  .fade-in-up {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+
+  .fade-in-up.animate {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .parallax {
+    will-change: transform;
+  }
+
+  /* Button variants */
+  .btn-hero {
+    @apply px-8 py-4 rounded-full font-medium transition-all duration-300;
+    background: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-soft);
+  }
+
+  .btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+  }
+
+  .btn-glass {
+    @apply backdrop-blur-sm border px-6 py-3 rounded-full transition-all duration-300;
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+  }
+
+  .btn-glass:hover {
+    background: hsl(var(--primary) / 0.1);
+    border-color: hsl(var(--primary) / 0.3);
+  }
+
+  /* Card hover effects */
+  .product-card {
+    @apply transition-all duration-500 ease-out;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .product-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-medium);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
