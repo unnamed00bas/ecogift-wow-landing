@@ -1,73 +1,54 @@
-# Welcome to your Lovable project
+# EcoGift — лендинг
 
-## Project info
+**Одностраничный сайт бренда ароматизаторов и декора для дома: первый экран, категории каталога, преимущества, контакты.**
 
-**URL**: https://lovable.dev/projects/be051c86-e64c-4c59-ac94-f3c652b02c63
+[![React](https://img.shields.io/badge/React-18-0573B8?style=flat-square&labelColor=0C0F13)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-сборка-0573B8?style=flat-square&labelColor=0C0F13)](https://vitejs.dev)
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-Radix-0573B8?style=flat-square&labelColor=0C0F13)](https://ui.shadcn.com)
+[![Автор](https://img.shields.io/badge/Автор-PROMAREN-E8A33B?style=flat-square&labelColor=0C0F13)](https://promaren.ru)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Что это
 
-**Use Lovable**
+Витрина на одну страницу для бренда EcoGift. Задача простая и честная: показать, что за продукт, разложить каталог по понятным полкам и довести посетителя до заказа, не заставляя никуда переходить.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/be051c86-e64c-4c59-ac94-f3c652b02c63) and start prompting.
+Страница собрана из готовых примитивов Radix и Tailwind, поэтому кнопки, меню и формы ведут себя предсказуемо и доступны с клавиатуры.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Что на странице
 
-**Use your preferred IDE**
+- **Первый экран** с главным обещанием и переходом в каталог.
+- **Категории продукта** — ароматизаторы, декор для интерьера.
+- **Блок преимуществ**: почему берут именно этот продукт.
+- **Шапка с навигацией** и подвал с контактами и правовой строкой.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Как запустить
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # сборка для выкладки
 ```
 
-**Edit a file directly in GitHub**
+## Как устроено
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+| Часть | Чем сделана |
+| -- | -- |
+| Сборка | Vite |
+| Экран | React 18, TypeScript |
+| Оформление | Tailwind CSS |
+| Примитивы | shadcn/ui поверх Radix |
+| Формы | react-hook-form |
+| Шрифт | Inter переменного начертания |
 
-**Use GitHub Codespaces**
+Компоненты лежат в `src/components`, страницы — в `src/pages`, примитивы интерфейса — в `src/components/ui`.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Состояние
 
-## What technologies are used for this project?
+Собран в сентябре 2025 года и с тех пор не менялся. Черновая витрина: пригодна как основа, боевым сайтом бренда не является.
 
-This project is built with:
+Блог EcoGift живёт отдельно, своей темой WordPress, и в этом репозитории его нет.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/be051c86-e64c-4c59-ac94-f3c652b02c63) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Сделано в [PROMAREN](https://promaren.ru). Сайты, посадочные страницы и личные кабинеты: [promaren.ru/products](https://promaren.ru/products/).
