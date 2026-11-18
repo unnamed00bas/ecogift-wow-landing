@@ -5,7 +5,7 @@
 [![React](https://img.shields.io/badge/React-18-0573B8?style=flat-square&labelColor=0C0F13)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-сборка-0573B8?style=flat-square&labelColor=0C0F13)](https://vitejs.dev)
 [![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-Radix-0573B8?style=flat-square&labelColor=0C0F13)](https://ui.shadcn.com)
-[![Автор](https://img.shields.io/badge/Автор-PROMAREN-E8A33B?style=flat-square&labelColor=0C0F13)](https://promaren.ru)
+[![Автор](https://img.shields.io/badge/Автор-Марина_Погодина-1A1917?style=flat-square)](https://github.com/unnamed00bas)
 
 ---
 
@@ -51,4 +51,4 @@ npm run build    # сборка для выкладки
 
 ---
 
-Сделано в [PROMAREN](https://promaren.ru). Сайты, посадочные страницы и личные кабинеты: [promaren.ru/products](https://promaren.ru/products/).
+Автор: [Марина Погодина](https://github.com/unnamed00bas).
